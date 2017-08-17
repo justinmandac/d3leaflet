@@ -5,6 +5,7 @@ const config = {
     path: __dirname,
     filename: 'app.bundle.js'
   },
+  devtool : 'source-map',
   module: {
     rules: [
       {
