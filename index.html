@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css" rel='stylesheet' />
     <link rel="stylesheet" href="style.css">
     <title>D3 + Leaflet</title>
   </head>
@@ -12,6 +13,16 @@
     <main id="app">
       <div id="map"></div>
     </main>
-    <script src="app.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js"></script>
+    <script src="//rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js"></script>
+    <!-- <script src="app.bundle.js"></script> -->
+    <script>
+      const map = new L.Map('map', {center: [14.5995, 120.9842], zoom: 5});
+      const gl = new L.MapboxGL({
+        accessToken : 'pk.eyJ1IjoianVzdGlubWFuZGFjIiwiYSI6ImNqNmczc3FyajA1NHgycHBrNzlneW9oMG0ifQ.eF_q_8CkR4-vlGhBAMqhtw',
+        // style: 'mapbox://styles/mapbox/dark-v9',
+      }).addTo(map);
+    </script>
   </body>
 </html>
