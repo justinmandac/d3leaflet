@@ -6,7 +6,7 @@ import L from 'leaflet';
 import 'mapbox-gl-leaflet/leaflet-mapbox-gl';
 
 // Center to MNL PH
-const map = new L.Map('map', {center: [14.5995, 120.9842], zoom: 5});
+const map = new L.Map('map', {center: [14.5995, 120.9842], zoom: 6});
 const gl = (new L.MapboxGL({
   accessToken : 'pk.eyJ1IjoianVzdGlubWFuZGFjIiwiYSI6ImNqNmczc3FyajA1NHgycHBrNzlneW9oMG0ifQ.eF_q_8CkR4-vlGhBAMqhtw',
   style: 'mapbox://styles/mapbox/dark-v9',

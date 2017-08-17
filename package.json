@@ -13,7 +13,7 @@
     "d3": "^4.10.0",
     "leaflet": "^1.2.0",
     "mapbox-gl": "^0.39.1",
-    "mapbox-gl-leaflet": "git+https://github.com/justinmandac/mapbox-gl-leaflet.git#umd-wrapper"
+    "mapbox-gl-leaflet": "git+https://github.com/mapbox/mapbox-gl-leaflet.git"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
