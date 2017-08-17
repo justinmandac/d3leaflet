@@ -13,7 +13,10 @@ map.addLayer(tileLayer)
 const svg = d3.select(map.getPanes().overlayPane).append('svg');
 const g = svg.append('g').attr('class', 'leaflet-zoom-hide');
 
-d3.json('https://bost.ocks.org/mike/leaflet/us-states.json',
-(err, collection) => {
-  console.log(collection);
-});
+// var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+
+// mapboxgl.accessToken = 'pk.eyJ1IjoianVzdGlubWFuZGFjIiwiYSI6ImNqNmczc3FyajA1NHgycHBrNzlneW9oMG0ifQ.eF_q_8CkR4-vlGhBAMqhtw';
+// var map = new mapboxgl.Map({
+// container: 'YOUR_CONTAINER_ELEMENT_ID',
+// style: 'mapbox://styles/mapbox/dark-v9'
+// });

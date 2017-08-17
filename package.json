@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve" : "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --content-base=./",
+    "serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --content-base=./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "d3": "^4.10.0",
-    "leaflet": "^1.2.0"
+    "leaflet": "^1.2.0",
+    "mapbox-gl": "^0.39.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
