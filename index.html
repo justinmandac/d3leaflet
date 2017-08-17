@@ -19,10 +19,10 @@
     <!-- <script src="app.bundle.js"></script> -->
     <script>
       const map = new L.Map('map', {center: [14.5995, 120.9842], zoom: 5});
-      const gl = new L.MapboxGL({
+      const gl = (new L.MapboxGL({
         accessToken : 'pk.eyJ1IjoianVzdGlubWFuZGFjIiwiYSI6ImNqNmczc3FyajA1NHgycHBrNzlneW9oMG0ifQ.eF_q_8CkR4-vlGhBAMqhtw',
-        // style: 'mapbox://styles/mapbox/dark-v9',
-      }).addTo(map);
+        style: 'mapbox://styles/mapbox/dark-v9',
+      })).addTo(map);
     </script>
   </body>
 </html>
