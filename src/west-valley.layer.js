@@ -18,6 +18,7 @@ export default class WestValleyLayer {
         .append('svg');
     this.g_ =
       this.svg_.append('g').attr('class', 'leaflet-zoom-hide wvf-layer');
+    console.log(this.g_);
 
     this.map_.on('zoomend', () => this.reset());
     this.isHidden_ = false;
@@ -27,6 +28,8 @@ export default class WestValleyLayer {
 
   toggle() {
     this.isHidden_ = !this.isHidden_;
+    document.querySelector('.wvf-layer')
+      .classList.toggle('-hidden', this.isHidden_);
   }
 
   /** Loads WVF coordinates. */
